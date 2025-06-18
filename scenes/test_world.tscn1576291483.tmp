@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy82vd0y1vewu"]
+
+[ext_resource type="Script" uid="uid://dcl4p811a3568" path="res://components/conditionals/conditional_checker.gd" id="1_kyfjp"]
+[ext_resource type="Script" uid="uid://c4r3gjn8y0l0g" path="res://components/conditionals/conditional.gd" id="2_amxg5"]
+
+[node name="test_world" type="Node2D"]
+
+[node name="condition_checker" type="Node" parent="."]
+script = ExtResource("1_kyfjp")
+
+[node name="conditional" type="Node" parent="condition_checker"]
+script = ExtResource("2_amxg5")
